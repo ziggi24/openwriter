@@ -2,11 +2,11 @@
 
 {{#author}}
 <header id="homepage-hero"
-	{{#if cover}}
-	style="background-image: url({{cover}});"
+	{{#if cover_image}}
+	style="background-image: url({{cover_image}});"
 	{{else}}
-		{{#if @blog.cover}}
-		style="background-image: url({{@blog.cover}});"
+		{{#if @blog.cover_image}}
+		style="background-image: url({{@blog.cover_image}});"
 		{{else}}
 		style="background-image: url('{{asset "images/cover.jpg"}}');"
 		{{/if}}

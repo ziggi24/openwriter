@@ -1,11 +1,11 @@
 {{!< default}}
 {{#post}}
 <header class="regular post" 
-	{{#if image}}
-	style="background-image: url({{image}});"
+	{{#if feature_image}}
+	style="background-image: url({{img_url}});"
 	{{else}}
-		{{#if @blog.cover}}
-		style="background-image: url({{@blog.cover}});"
+		{{#if @blog.cover_image}}
+		style="background-image: url({{@blog.cover_image}});"
 		{{else}}
 		style="background-image: url('{{asset "images/cover.jpg"}}');"
 		{{/if}}
